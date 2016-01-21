@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2881F395-D652-45E2-B973-FDD1A2DBED00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo.Solutions.Primary</RootNamespace>
+    <AssemblyName>Demo.Solutions.Primary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities\Account\Entity.xml" />
+    <Content Include="Entities\Account\FormXml\main\{b053a39a-041a-4356-acef-ddf00182762b}.xml" />
+    <Content Include="Entities\Account\FormXml\main\{b053a39a-041a-4356-acef-ddf00182762b}_managed.xml" />
+    <Content Include="Entities\Account\FormXml\quick\{32fca921-b77d-455d-8ac7-42b838ee5644}.xml" />
+    <Content Include="Entities\Account\FormXml\quick\{32fca921-b77d-455d-8ac7-42b838ee5644}_managed.xml" />
+    <Content Include="Entities\Account\RibbonDiff.xml" />
+    <Content Include="Entities\Account\SavedQueries\{9717aef9-7dbc-e511-80be-00155d281b30}.xml" />
+    <Content Include="Entities\Incident\Entity.xml" />
+    <Content Include="Entities\Incident\FormXml\main\{f658c846-f74c-459b-b591-b97558958106}.xml" />
+    <Content Include="Entities\Incident\FormXml\main\{f658c846-f74c-459b-b591-b97558958106}_managed.xml" />
+    <Content Include="Entities\Incident\RibbonDiff.xml" />
+    <Content Include="Entities\nf_accountproducts\Entity.xml" />
+    <Content Include="Entities\nf_accountproducts\FormXml\main\{c3cb0a7f-6a81-4356-81bb-495c3a7a8804}.xml" />
+    <Content Include="Entities\nf_accountproducts\FormXml\main\{c3cb0a7f-6a81-4356-81bb-495c3a7a8804}_managed.xml" />
+    <Content Include="Entities\nf_accountproducts\FormXml\mobile\{b4837661-3f88-4060-b081-bc5233b10afe}.xml" />
+    <Content Include="Entities\nf_accountproducts\FormXml\mobile\{b4837661-3f88-4060-b081-bc5233b10afe}_managed.xml" />
+    <Content Include="Entities\nf_accountproducts\RibbonDiff.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{0fbc8008-e752-4f61-a0e8-7ceae9e9ca3c}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{70ff4006-9f66-4b22-83f6-55c2aaac9ec2}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{851b0193-b675-4939-a9d0-4979ebabb9a3}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{94b55728-0542-4cdc-bf17-29323a2b609c}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{9680e932-b1a9-e511-80b9-00155d281b30}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{e8e67eec-a03f-4b72-b71b-b12ad786eae7}.xml" />
+    <Content Include="Entities\nf_accountproducts\SavedQueries\{ec779266-55b7-4683-b704-6cf766f21c5e}.xml" />
+    <Content Include="Entities\nf_alternateproducts\Entity.xml" />
+    <Content Include="Entities\nf_alternateproducts\FormXml\main\{b6d989cf-b702-4664-a850-f0601bbf1591}.xml" />
+    <Content Include="Entities\nf_alternateproducts\FormXml\main\{b6d989cf-b702-4664-a850-f0601bbf1591}_managed.xml" />
+    <Content Include="Entities\nf_alternateproducts\FormXml\mobile\{9e1f14c6-e615-496f-9a37-a987b7066a94}.xml" />
+    <Content Include="Entities\nf_alternateproducts\FormXml\mobile\{9e1f14c6-e615-496f-9a37-a987b7066a94}_managed.xml" />
+    <Content Include="Entities\nf_alternateproducts\RibbonDiff.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{0494db0a-e046-43cf-9ef9-279117526929}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{0af8d0f8-6ee5-461e-8070-c98d84e92c2e}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{580193bf-4a4e-4a71-a586-e76ade159061}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{5a105fb8-78bb-e511-80bd-00155d281b30}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{7a1ebc07-1e5f-4d4d-ae0f-94eb78414802}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{a45507d7-10ba-40a4-95ab-91b1b3ed4698}.xml" />
+    <Content Include="Entities\nf_alternateproducts\SavedQueries\{a5b6dcb5-93af-4701-bae5-83f89e8fd05e}.xml" />
+    <Content Include="OptionSets\nf_alternateproducttype.xml" />
+    <Content Include="Other\Customizations.xml" />
+    <Content Include="Other\EntityMaps.xml" />
+    <Content Include="Other\Relationships.xml" />
+    <Content Include="Other\Relationships\Account.xml" />
+    <Content Include="Other\Relationships\BusinessUnit.xml" />
+    <Content Include="Other\Relationships\Incident.xml" />
+    <Content Include="Other\Relationships\nf_accountproducts.xml" />
+    <Content Include="Other\Relationships\nf_alternateproducts.xml" />
+    <Content Include="Other\Relationships\Owner.xml" />
+    <Content Include="Other\Relationships\SystemUser.xml" />
+    <Content Include="Other\Relationships\Team.xml" />
+    <Content Include="Other\Solution.xml" />
+    <Content Include="PluginAssemblies\NfProject1Plugins-895C60F8-44F9-4E81-A01A-6A24A26EC4B3\NfProject1Plugins.dll" />
+    <Content Include="PluginAssemblies\NfProject1Plugins-895C60F8-44F9-4E81-A01A-6A24A26EC4B3\NfProject1Plugins.dll.data.xml" />
+    <Content Include="SdkMessageProcessingSteps\{c8ff3ed1-b0bb-e511-80bd-00155d281b30}.xml" />
+    <Content Include="Workflows\GenerateAccountProductName-C2900C3A-5EB8-4A1F-9A93-B8BFEA55FFDE.xaml.data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Workflows\GenerateAccountProductName-C2900C3A-5EB8-4A1F-9A93-B8BFEA55FFDE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="Build">
+    <Exec Command="$(SolutionDir)\Nullfactory.Crm.Tooling\bin\coretools\SolutionPackager.exe /action:pack /packagetype:both /folder:$(MSBuildProjectDirectory) /zipfile:$(OutDir)$(MSBuildProjectName).zip" />
+  </Target>
+</Project>
