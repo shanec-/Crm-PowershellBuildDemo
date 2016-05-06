@@ -3,4 +3,5 @@
 -username "domain\username" `
 -password "password" `
 -solutionName "solutionname" `
--solutionRootFolder "..\..\Demo.Solutions.Primary"
+-solutionRootFolder "..\..\Demo.Solutions.Primary" `
+-isOnlineSolution

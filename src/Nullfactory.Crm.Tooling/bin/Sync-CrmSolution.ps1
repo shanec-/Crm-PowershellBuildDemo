@@ -6,7 +6,8 @@ param(
 	[string]$username,
 	[string]$password,
 	[string]$solutionName,
-	[string]$solutionRootFolder
+	[string]$solutionRootFolder,
+	[switch]$isOnlineSolution = $false
 )
 
 Write-Verbose "Import Micrsoft.Xrm.Data.Powershell module"
@@ -15,14 +16,23 @@ Import-Module Microsoft.Xrm.Data.Powershell
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential ($username, $securePassword)
 
-Write-Verbose "connect to the crm instance"
-Connect-CrmOnPremDiscovery -Credential $creds -ServerUrl $serverUrl
+
+if($isOnlineSolution)
+{
+	Write-Verbose "connecting to the crm online instance..."
+	Connect-CrmOnlineDiscovery -Credential $creds
+}
+else
+{
+	Write-Verbose "connecting to the crm OnPrem instance..."
+	Connect-CrmOnPremDiscovery -Credential $creds -ServerUrl $serverUrl
+}
 
 $exportZipFileName = $solutionName + "_export.zip"
 $exportZipFileNameManaged = $solutionName + "_export_Managed.zip"
 
-Remove-Item $exportZipFileName
-Remove-Item $exportZipFileNameManaged 
+Remove-Item $exportZipFileName -ErrorAction SilentlyContinue
+Remove-Item $exportZipFileNameManaged -ErrorAction SilentlyContinue
 
 Write-Verbose "export the un-managed version of the solution"
 Export-CrmSolution -SolutionName $solutionName -SolutionZipFileName $exportZipFileName
